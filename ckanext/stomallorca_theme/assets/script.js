@@ -8,3 +8,8 @@ ckan.module("stomallorca_theme-module", function ($, _) {
     initialize: function () {},
   };
 });
+
+/* $(".navbar .nav-link").on("click", function(){
+  $(".navbar").find(".active").removeClass("active");
+  $(this).addClass("active");
+}); */
