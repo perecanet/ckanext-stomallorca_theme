@@ -15,7 +15,7 @@ def default_locale():
     return value
 
 def stomallorca_portal_url():
-    portal_url = config.get('ckanext.stomallorca_theme.portal_url', 'https://dev.stomallorca.com/')
+    portal_url = config.get('ckanext.stomallorca_theme.portal_url', 'https://pre.stomallorca.com/')
     if (h.lang() != 'es'):
       portal_url += h.lang() + '/'
     return portal_url
@@ -60,9 +60,9 @@ class StomallorcaThemePlugin(plugins.SingletonPlugin, DefaultTranslation):
             'extrafields_default_locale': default_locale,
             'stomallorca_portal_url': stomallorca_portal_url,
             'stomallorca_theme_get_license': get_license,
-            'stomallorca_theme_get_group': get_group,
+            'stomallorca_theme_get_group': get_group
         }
-
+    
     # IPackageController
     def before_dataset_search(self, search_params):
         search_params['q'] = search_params.get('q', '').lower()
