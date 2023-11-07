@@ -296,7 +296,7 @@ ul#menusecundario  li a{
 }
 
 a.nav-link.active {
-  color: #5a8e22;
+  color: #5a8e22 !important;
 }
 
 button.navbar-toggler {
