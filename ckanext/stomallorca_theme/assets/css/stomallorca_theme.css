@@ -295,6 +295,10 @@ ul#menusecundario  li a{
   color: #5a8e22;
 }
 
+a.nav-link.active {
+  color: #5a8e22;
+}
+
 button.navbar-toggler {
   border: none;
 }
